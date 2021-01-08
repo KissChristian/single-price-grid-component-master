@@ -1,0 +1,179 @@
+
+
+:root{
+/* Colors*/
+
+/*Primary*/    
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan-light: hsl(179, 47%, 52%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+/*Neutral*/
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+
+    /* background-colors and text-Colors */
+.description{
+    background-color: white;
+}
+.description-tittle{
+    color:var(--Cyan)
+}
+.description-inf{
+    color: var(--Bright-Yellow);
+}
+.description-text{
+    color: var(--Grayish-Blue);
+}
+
+
+.subscription{
+    background-color: var(--Cyan);
+}
+.subscription-tittle{
+    color: white;
+}
+.subscription-price span{
+    color: white;
+}
+.subscription-price {
+    color:var(--Light-Gray);
+}
+.subscription-text{
+    color:white;
+}
+.subscription-button{
+    background-color: var(--Bright-Yellow);
+    color: var(--Light-Gray);
+}
+
+.about{
+    background-color: var(--Cyan-light);
+}
+.about-tittle{
+    color: white;
+}
+.about-list{
+    color:var(--Light-Gray)
+}
+
+/*base desing*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    background-color: var(--Light-Gray);
+    width:100vw;
+    height:100vh;
+    padding:10.66666666666667% 5.333333333333333%;
+}
+.box{
+    width: 100%;
+    padding: 7%;
+}
+.description{
+    border-radius: 5px 5px 0 0;
+}
+.about{
+    border-radius:  0 0 5px 5px; 
+}
+
+
+/*box-items*/
+
+h3,p{
+    margin-bottom: 20px ;
+}
+
+.description-text{
+    line-height: 28px;
+}
+
+
+.price{
+    font-size: 30px;
+}
+
+.subscription-button{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px; 
+}
+
+.about-list{
+    line-height: 20px;
+    list-style-type: none;
+    font-size: small;
+}
+
+
+
+
+/*MOBILE-DESING (375px)*/
+
+@media (max-width:375px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+}
+
+/*PC-DESING (1440px)*/
+@media (min-width:1024px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        height: 50%;
+        border-radius: 5px 5px 0 0;
+    }
+    .subscription ,.about{
+        width:50%;
+        height: 50%;
+    }
+
+  
+    .subscription{
+        border-radius: 0 0 0 5px;
+        padding: 4%;
+    }
+    .subscription-button{
+        width: 87%;
+    }
+
+    .about{
+        border-radius: 0 0 5px 0;
+        padding: 4%;
+    }
+}
