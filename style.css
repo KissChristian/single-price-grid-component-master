@@ -89,7 +89,7 @@ body{
 
 /*box-items*/
 
-h3,p{
+h2,p{
     margin-bottom: 20px ;
 }
 
@@ -175,5 +175,11 @@ h3,p{
     .about{
         border-radius: 0 0 5px 0;
         padding: 4%;
+    }
+    
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
     }
 }
